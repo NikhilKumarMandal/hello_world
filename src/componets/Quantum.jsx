@@ -97,13 +97,14 @@ const QuantumSquaresGame = () => {
 
   return (
     <div>
-      <h1>Quantum Squares</h1>
+      <h1 className='bg'>Quantum Squares</h1>
       <h2>Player 1 Score: {playerScores[1]} | Player 2 Score: {playerScores[2]}</h2>
       <h3>Current Player: Player {currentPlayer}</h3>
 
-      <div>
+      <div className='hello-win'>
         <label>Grid Size: </label>
         <input
+          className='label'
           type="number"
           value={gridSize}
           onChange={handleGridSizeChange}
@@ -111,9 +112,7 @@ const QuantumSquaresGame = () => {
         />
       </div>
 
-      <button onClick={resetGame} style={{ margin: '10px', padding: '10px', backgroundColor: '#ff6347', color: 'white', borderRadius: '5px', cursor: 'pointer' }}>
-        Reset Game
-      </button>
+      
 
       <div className="grid-container" style={{ gridTemplateColumns: `repeat(${gridSize}, 1fr)` }}>
         {grid.map((row, r) =>
@@ -132,6 +131,9 @@ const QuantumSquaresGame = () => {
           ))
         )}
       </div>
+      <button onClick={resetGame} style={{ margin: '10px', padding: '10px', backgroundColor: '#ff6347', color: 'white', borderRadius: '5px', cursor: 'pointer' }}>
+        Reset Game
+      </button>
     </div>
   );
 };
