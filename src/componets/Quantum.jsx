@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import '../App.css';  
+import '../App.css';
+
 
 const QuantumSquaresGame = () => {
   const [gridSize, setGridSize] = useState(5);  
@@ -96,9 +97,9 @@ const QuantumSquaresGame = () => {
   };
 
   return (
-    <div>
+    <div >
       <h1 className='bg'>Quantum Squares</h1>
-      <h2>Player 1 Score: {playerScores[1]} | Player 2 Score: {playerScores[2]}</h2>
+      <h2 >Player 1 Score: {playerScores[1]} | Player 2 Score: {playerScores[2]}</h2>
       <h3>Current Player: Player {currentPlayer}</h3>
 
       <div className='hello-win'>

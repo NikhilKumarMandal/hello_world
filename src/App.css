@@ -52,10 +52,10 @@ h1, h2, h3 {
 }
 
 .square:hover {
-  background-color: #e0e0e0;  /* Subtle light gray background on hover */
-  border-color: #ff6347; /* Change border color to match button color */
-  transform: scale(1.05);  /* Slight zoom-in effect on hover */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Add a shadow for a floating effect */
+  background-color: #e0e0e0; 
+  border-color: #ff6347; 
+  transform: scale(1.05);  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 button {
@@ -80,7 +80,7 @@ button:focus {
 
 .label {
   width: 100%;
-  max-width: 200px;  /* Set a max width to prevent label from being too wide */
+  max-width: 200px; 
   margin: auto;
   padding: 10px;
   text-align: left;
@@ -96,13 +96,13 @@ button:focus {
 
 @media (max-width: 600px) {
   .grid-container {
-    gap: 5px;  /* Adjust gap for smaller screens */
+    gap: 5px; 
   }
   
   .square {
     font-size: 1rem;
     width: 40px;
-    height: 40px;  /* Reduce size for smaller devices */
+    height: 40px;  
   }
 
   button {
