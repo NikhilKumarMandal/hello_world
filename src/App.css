@@ -48,12 +48,14 @@ h1, h2, h3 {
   border: 2px solid #333;  /* Thicker border for better visual separation */
   cursor: pointer;
   background-color: #fff; /* Default white background */
-  transition: background-color 0.3s, transform 0.2s;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
 }
 
 .square:hover {
-  background-color: lightgray;  /* Subtle highlight on hover */
+  background-color: #e0e0e0;  /* Subtle light gray background on hover */
+  border-color: #ff6347; /* Change border color to match button color */
   transform: scale(1.05);  /* Slight zoom-in effect on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Add a shadow for a floating effect */
 }
 
 button {
@@ -112,3 +114,4 @@ button:focus {
   background-color: aqua;
   padding: 10px;
 }
+
